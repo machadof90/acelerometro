@@ -14,6 +14,41 @@
 
 // inicia componentes
 int tempo = 50;
+void cor(int num){
+    switch (num)
+    {
+    case: 1
+        vermelho();
+        break;
+    
+    case: 2
+        azul();
+        break;
+    
+    case: 3
+        amarelo();
+        break;
+    
+    case: 4
+        rosa();
+        break;
+    
+    case: 5
+        ciano();
+        break;    
+        
+    case: 6 
+        branco();    
+        break;    
+        
+    case: 7
+        verde();
+        break;    
+    default:
+        break;
+    }
+}
+
 
 int main()
 {
@@ -29,6 +64,7 @@ int main()
             tempo = tempo - 50;            
         }else if(gpio_get(BUTTON_B) == 0 && tempo < 1000){
             tempo = tempo + 50;
-        }        
+        }    
+        if(gpio_get(BUTTON_J) == 0){    
     }
 }
